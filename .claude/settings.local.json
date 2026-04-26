@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node -e \" const fs = require\\('fs'\\); const content = fs.readFileSync\\('/Users/mauroagostinelli/Desktop/gama-agostinelli/node_modules/vite/dist/node/chunks/config.js', 'utf8'\\); const lines = content.split\\('\\\\n'\\); // Show lines around 23898 and 8777 console.log\\('=== processAssetUrl area \\(23890-23910\\) ==='\\); lines.slice\\(23889, 23910\\).forEach\\(\\(l, i\\) => console.log\\(23890+i, l\\)\\); \")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \" const fs = require\\('fs'\\); const content = fs.readFileSync\\('/Users/mauroagostinelli/Desktop/gama-agostinelli/node_modules/vite/dist/node/chunks/config.js', 'utf8'\\); const lines = content.split\\('\\\\n'\\); // Find publicFilesMap population const idx = lines.findIndex\\(l => l.includes\\('publicFilesMap'\\)\\); console.log\\('publicFilesMap first occurrence at line', idx+1\\); lines.slice\\(Math.max\\(0,idx-2\\), idx+30\\).forEach\\(\\(l, i\\) => console.log\\(Math.max\\(1,idx-1\\)+i, l\\)\\); \")",
+      "Bash(node -e \" const fs = require\\('fs'\\); const content = fs.readFileSync\\('/Users/mauroagostinelli/Desktop/gama-agostinelli/node_modules/vite/dist/node/chunks/config.js', 'utf8'\\); const lines = content.split\\('\\\\n'\\); const idx = lines.findIndex\\(l => l.includes\\('function cleanUrl'\\)\\); console.log\\('cleanUrl at line', idx+1\\); lines.slice\\(idx, idx+5\\).forEach\\(\\(l, i\\) => console.log\\(idx+1+i, l\\)\\); // Also check what processAssetUrl actually gets called with for link tags const idx2 = lines.findIndex\\(l => l.includes\\('rel=\\\\\"icon\\\\\"'\\) || l.includes\\(\\\\\"rel='icon'\\\\\"\\) || l.includes\\('isStyleSheet'\\) || l.includes\\('processAssetUrl'\\)\\); console.log\\('\\\\\\\\nprocessAssetUrl call around line', idx2+1\\); lines.slice\\(Math.max\\(0,idx2-5\\), idx2+20\\).forEach\\(\\(l, i\\) => console.log\\(Math.max\\(1,idx2-4\\)+i, l\\)\\); \")",
+      "Bash(node -e \" const fs = require\\('fs'\\); const content = fs.readFileSync\\('/Users/mauroagostinelli/Desktop/gama-agostinelli/node_modules/vite/dist/node/chunks/config.js', 'utf8'\\); const lines = content.split\\('\\\\n'\\); // Find where link tags are processed let idx = 23910; while \\(idx < 24100\\) { if \\(lines[idx].includes\\('link'\\) || lines[idx].includes\\('href'\\) || lines[idx].includes\\('rel'\\) || lines[idx].includes\\('processAssetUrl'\\)\\) { lines.slice\\(idx, idx+5\\).forEach\\(\\(l, i\\) => console.log\\(idx+1+i, l\\)\\); console.log\\('---'\\); } idx++; } \")",
+      "Bash(npm run *)"
+    ]
+  }
+}
