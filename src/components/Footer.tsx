@@ -1,4 +1,4 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Instagram } from "lucide-react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -72,6 +72,15 @@ const Footer = () => {
               >
                 <MessageCircle className="w-3.5 h-3.5 text-primary shrink-0" />
                 <span>+56 9 3368 5702 · WhatsApp</span>
+              </a>
+              <a
+                href="https://www.instagram.com/gama.agostinelli/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Instagram className="w-3.5 h-3.5 text-primary shrink-0" />
+                <span>@gama.agostinelli</span>
               </a>
             </div>
           </div>
