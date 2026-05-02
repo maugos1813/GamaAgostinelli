@@ -1,4 +1,4 @@
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -58,27 +58,20 @@ const Footer = () => {
                 Contacto rápido
               </p>
               <a
-                href="mailto:hola@gamaagostinelli.com"
+                href="mailto:maufabagosgam@gmail.com"
                 className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-w-0"
               >
                 <Mail className="w-3.5 h-3.5 text-primary shrink-0" />
-                <span className="truncate">hola@gamaagostinelli.com</span>
+                <span className="truncate">maufabagosgam@gmail.com</span>
               </a>
               <a
-                href="https://wa.me/34600000000"
+                href="https://wa.me/56933685702"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <MessageCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                <span>+34 600 000 000 · WhatsApp</span>
-              </a>
-              <a
-                href="tel:+34910000000"
-                className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
-                <span>+34 910 000 000 · Oficina</span>
+                <span>+56 9 3368 5702 · WhatsApp</span>
               </a>
             </div>
           </div>
