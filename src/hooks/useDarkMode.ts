@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function applyDark(dark: boolean) {
   const root = document.documentElement;
@@ -13,23 +13,10 @@ function applyDark(dark: boolean) {
 
 export function useDarkMode() {
   const [isDark, setIsDark] = useState<boolean>(() => {
-    // Always start from system preference (light by default)
-    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    applyDark(dark);
-    return dark;
+    // Always start in light mode
+    applyDark(false);
+    return false;
   });
-
-  // Auto-update when system theme changes
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    const handler = (e: MediaQueryListEvent) => {
-      applyDark(e.matches);
-      setIsDark(e.matches);
-      window.dispatchEvent(new CustomEvent("ga-mode-change"));
-    };
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
 
   const toggle = () => {
     setIsDark((prev) => {
