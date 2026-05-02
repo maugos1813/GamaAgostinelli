@@ -34,9 +34,11 @@ const Navbar = () => {
     >
       <nav className="container flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center">
-            <span className="text-primary-foreground font-display font-bold text-sm"><img src="logoga.png" alt="logo de empresa" className="rounded-3xl"/></span>
-          </div>
+          <img
+            src="/logov2.jpeg"
+            alt="GamaAgostinelli"
+            className="w-8 h-8 rounded-lg object-cover shrink-0"
+          />
           <span className="font-display font-semibold text-lg tracking-tight">
             Gama<span className="text-primary">Agostinelli</span>
           </span>

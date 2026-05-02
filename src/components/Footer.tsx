@@ -38,13 +38,11 @@ const Footer = () => {
           {/* ── Brand + contact ─────────────────────────────────────── */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-4">
             <a href="#inicio" className="flex items-center gap-2 w-fit">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center shrink-0">
-                <img
-                  src="logoga.png"
-                  alt="Logo GamaAgostinelli"
-                  className="rounded-3xl w-full h-full object-cover"
-                />
-              </div>
+              <img
+                src="/logov2.jpeg"
+                alt="Logo GamaAgostinelli"
+                className="w-8 h-8 rounded-lg object-cover shrink-0"
+              />
               <span className="font-display font-semibold text-base lg:text-lg tracking-tight">
                 Gama<span className="text-primary">Agostinelli</span>
               </span>
