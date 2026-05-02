@@ -118,7 +118,8 @@ const Sectors = () => {
                 <Button variant="hero" size="default" asChild className="w-full">
                   <a href={s.cta} className="flex items-center justify-center gap-2">
                     <Calendar className="w-4 h-4 block md:hidden lg:block" />
-                    Quiero mi landing para {s.tag.toLowerCase()}
+                    <span className="md:hidden">Quiero mi landing ahora</span>
+                    <span className="hidden md:inline">Quiero mi landing para {s.tag.toLowerCase()}</span>
                   </a>
                 </Button>
               </div>
