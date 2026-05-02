@@ -70,9 +70,9 @@ const Method = () => {
             <span className="gradient-text italic">Método 7D™</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-base lg:text-lg max-w-xl">
-            El framework que multiplica conversiones en clínicas hasta{" "}
+            El framework que multiplica conversiones hasta{" "}
             <span className="text-foreground font-semibold">4.8x en promedio</span>.
-            7 fases. 7 días. Resultados medibles desde la primera semana.
+            7 fases. 7 días. Resultados medibles.
           </p>
         </motion.div>
 

@@ -41,8 +41,7 @@ const Contact = () => {
               Hablemos de tu próxima landing.
             </h2>
             <p className="mt-4 text-muted-foreground text-base lg:text-lg leading-relaxed">
-              Contanos brevemente sobre tu proyecto. Te respondemos con una
-              propuesta clara en menos de 24 horas hábiles.
+              Contanos tu proyecto. Respuesta con propuesta clara en menos de 24 horas.
             </p>
 
             <div className="mt-8 space-y-4">

@@ -26,14 +26,10 @@ const About = () => {
           <div className="lg:col-span-7 space-y-5">
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
               <span className="text-foreground font-medium">GamaAgostinelli</span>{" "}
-              es un estudio especializado en una sola cosa: diseñar y construir
-              landing pages que realmente conviertan. No hacemos de todo. Hacemos
-              esto, y lo hacemos muy bien.
-            </p>
-            <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-              Combinamos diseño editorial, desarrollo a medida y estrategia de
-              conversión para crear páginas que no solo se ven increíbles, sino
-              que cumplen objetivos medibles para tu negocio.
+              es un estudio especializado en una sola cosa: landing pages que convierten.
+              Combinamos diseño editorial, desarrollo a medida y estrategia de conversión
+              para crear páginas que no solo se ven increíbles — sino que cumplen
+              objetivos medibles para tu negocio.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">

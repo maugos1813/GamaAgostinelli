@@ -7,8 +7,8 @@ const sectors = [
     icon: Stethoscope,
     tag: "Clínicas Dentales",
     headline: "Tus sillones llenos.\nSin depender de recomendaciones.",
-    pain: "Tu clínica hace un gran trabajo… pero los pacientes nuevos no llegan solos. Sin presencia digital optimizada, competís con clínicas que aparecen primero en Google y tienen agenda llena.",
-    solution: "Diseñamos landings específicas para dentales que captan pacientes para implantes, ortodoncia y estética dental — con formularios que convierten y CTAs pensados para el paciente que está buscando ahora mismo.",
+    pain: "Sin presencia digital optimizada, competís con clínicas que aparecen primero en Google y tienen la agenda llena.",
+    solution: "Landings para dentales que captan pacientes activos en implantes, ortodoncia y estética — con formularios que convierten y CTAs para quien busca ahora.",
     points: [
       "Copy orientado a tratamientos premium (implantes, brackets, blanqueamiento)",
       "Captación de pacientes nuevos desde Google y redes",
@@ -24,8 +24,8 @@ const sectors = [
     icon: PawPrint,
     tag: "Clínicas Veterinarias",
     headline: "Más citas, menos ausencias.\nAgenda que se llena sola.",
-    pain: "Los dueños de mascotas buscan en Google y eligen la primera clínica que transmite confianza. Si tu web no convierte esa búsqueda en cita, la cita va a tu competencia.",
-    solution: "Creamos landings veterinarias con lenguaje emocional que conecta con tutores, formularios de reserva online 24/7 y recordatorios que reducen ausencias — para que tu clínica trabaje incluso cuando cerrás.",
+    pain: "Los tutores eligen la primera clínica que transmite confianza. Si tu web no convierte esa búsqueda, la cita va a tu competencia.",
+    solution: "Landings veterinarias con lenguaje emocional, reserva online 24/7 y recordatorios automáticos — tu clínica capta pacientes incluso cuando cerrás.",
     points: [
       "Copy emocional que conecta con el vínculo mascota-tutor",
       "Reserva online y recordatorios automáticos",

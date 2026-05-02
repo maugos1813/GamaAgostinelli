@@ -26,8 +26,7 @@ const LeadMagnet = () => {
                 Auditoría gratuita de tu web
               </h3>
               <p className="mt-2 text-muted-foreground max-w-lg">
-                Analizamos tu web actual y te decimos exactamente por qué no convierte —
-                con un informe claro y accionable. Sin humo, sin venderte nada.
+                Analizamos tu web y te decimos por qué no convierte — con un informe claro y accionable. Sin compromiso.
               </p>
             </div>
           </div>

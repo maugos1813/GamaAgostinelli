@@ -7,8 +7,7 @@ const testimonials = [
     role: "Directora · Clínica Dental Sonría · Madrid",
     initials: "LM",
     color: "bg-rose-500",
-    quote:
-      "Pasamos de 5 a 27 leads semanales en menos de 3 semanas. Probé antes con una agencia generalista y fue dinero perdido. Con GamaAgostinelli vi resultados reales desde el día 10. Ya recuperamos la inversión el primer mes.",
+    quote: "Pasamos de 5 a 27 leads semanales en 3 semanas. Recuperamos la inversión el primer mes.",
     stars: 5,
     metric: "+440% leads",
   },
@@ -17,8 +16,7 @@ const testimonials = [
     role: "Veterinario · PetCare Centro · Barcelona",
     initials: "CR",
     color: "bg-emerald-500",
-    quote:
-      "Antes perdíamos consultas porque nadie respondía fuera de horario. Ahora la landing captura los datos automáticamente y WhatsApp hace el resto. Llenamos agenda con semanas de anticipación y reducimos ausencias un 40%.",
+    quote: "La landing captura consultas fuera de horario automáticamente. Llenamos agenda con semanas de anticipación y bajamos ausencias un 40%.",
     stars: 5,
     metric: "+65 citas/mes",
   },
@@ -27,8 +25,7 @@ const testimonials = [
     role: "Gerente · Centro Odontológico Norte · Valencia",
     initials: "MI",
     color: "bg-violet-500",
-    quote:
-      "Entregaron en exactamente 7 días como prometieron. Los resultados fueron visibles desde la primera semana. El ROI fue de 4.2x en los primeros 60 días. Ahora estamos ampliando el equipo para atender la demanda.",
+    quote: "Entregaron en 7 días exactos. ROI de 4.2x en 60 días. Estamos ampliando el equipo para atender la demanda.",
     stars: 5,
     metric: "4.2x ROI en 60 días",
   },
@@ -37,8 +34,7 @@ const testimonials = [
     role: "Propietario · VetSalud Clínica · Sevilla",
     initials: "PS",
     color: "bg-amber-500",
-    quote:
-      "La conversión pasó de 1.1% a 4.8% en 30 días. No lo creía hasta verlo en Analytics. El proceso fue completamente transparente: sabía exactamente qué estaban haciendo en cada fase.",
+    quote: "La conversión pasó de 1.1% a 4.8% en 30 días. No lo creía hasta verlo en Analytics.",
     stars: 5,
     metric: "de 1.1% → 4.8%",
   },

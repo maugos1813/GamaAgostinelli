@@ -6,31 +6,31 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     q: "¿Por qué confiar en GamaAgostinelli si no los conozco?",
-    a: "Entendemos la duda. Por eso ofrecemos una garantía real y por escrito: si en 60 días tu clínica no recibe más pacientes nuevos, seguimos trabajando sin coste adicional. No pedimos confianza ciega — la ganamos con resultados. Podés ver proyectos reales en nuestra sección de trabajos.",
+    a: "Garantía real y por escrito: si en 60 días tu clínica no recibe más pacientes, seguimos trabajando sin coste adicional. Podés ver proyectos reales en nuestra sección de trabajos.",
   },
   {
     q: "¿Qué pasa si no obtengo los resultados prometidos?",
-    a: "Trabajamos hasta lograrlo, sin coste extra. Si en 60 días no ves un aumento real de pacientes nuevos desde tu landing, seguimos optimizando gratuitamente. No es solo marketing — está garantizado por escrito en el contrato.",
+    a: "Seguimos optimizando gratis hasta lograrlo. Está garantizado por escrito en el contrato — no es solo marketing.",
   },
   {
     q: "¿No puedo hacer esto más barato con Wix o WordPress?",
-    a: "Podés. Pero una web genérica convierte al 0.5–1.5%. Las nuestras promedian 3.8%. Con 500 visitas/mes y un ticket de €120 por paciente, esa diferencia son +€1.560 extra al mes. El coste de no optimizar supera con creces el de contratar.",
+    a: "Podés. Pero una web genérica convierte al 0.5–1.5%, las nuestras promedian 3.8%. Con 500 visitas/mes y €120 de ticket, esa diferencia son +€1.560 extra al mes.",
   },
   {
     q: "¿Qué pasa si ya tengo una web?",
-    a: "Mejor. Hacemos una auditoría gratuita de tu web actual, identificamos por qué no convierte y diseñamos una landing complementaria enfocada en captación. No la reemplazamos — la potenciamos con una máquina de generar leads específica para tu clínica.",
+    a: "Mejor. Auditamos tu web actual gratis, identificamos por qué no convierte y diseñamos una landing complementaria enfocada en captación.",
   },
   {
     q: "¿Cuánto tiempo tarda el proceso?",
-    a: "7 días desde el briefing hasta el lanzamiento: diagnóstico (D1–D2), diseño (D3), desarrollo (D4–D5), publicación + analítica (D6–D7). Si no cumplimos el plazo, aplicamos un descuento automático sin que tengas que pedirlo.",
+    a: "7 días: diagnóstico (D1–D2), diseño (D3), desarrollo (D4–D5), lanzamiento + analítica (D6–D7). Si no cumplimos el plazo, aplicamos un descuento automático.",
   },
   {
-    q: "¿Necesito conocimientos técnicos para gestionar la landing?",
-    a: "Ninguno. Te entregamos todo listo: hosting configurado, analítica activa, formularios conectados a tu WhatsApp o email. Incluimos 30 días de soporte post-lanzamiento. Vos solo revisás los leads que llegan.",
+    q: "¿Necesito conocimientos técnicos?",
+    a: "Ninguno. Entregamos todo listo: hosting, analítica y formularios conectados a tu WhatsApp. Más 30 días de soporte post-lanzamiento.",
   },
   {
     q: "¿En qué se diferencia de contratar un freelancer?",
-    a: "Un freelancer entrega diseño. Nosotros entregamos conversión. Combinamos estrategia, copy persuasivo, diseño UI/UX, desarrollo técnico y analítica en un solo sistema con garantía de resultados. Un freelancer no puede garantizar pacientes — nosotros sí.",
+    a: "Un freelancer entrega diseño. Nosotros entregamos conversión: estrategia, copy, UI/UX, desarrollo y analítica en un sistema con garantía de resultados.",
   },
 ];
 

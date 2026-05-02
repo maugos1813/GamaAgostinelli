@@ -39,7 +39,7 @@ const RoiCalculator = () => {
             <span className="gradient-text italic">perdiendo cada mes</span>.
           </h2>
           <p className="mt-4 text-muted-foreground text-base lg:text-lg">
-            Sin una landing optimizada, cada visita que no convierte es dinero que se va a tu competencia. Calculá el impacto real.
+            Cada visita que no convierte es dinero que va a tu competencia. Calculá el impacto real.
           </p>
         </motion.div>
 
