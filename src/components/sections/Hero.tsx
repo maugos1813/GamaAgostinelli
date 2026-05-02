@@ -9,7 +9,7 @@ const BG: Record<string, string> = {
 
 const Hero = () => {
   const { colorTheme } = useColorTheme();
-  const bgSrc = BG[colorTheme] ?? "/herobg.jpg";
+  const bgSrc = BG[colorTheme] ?? "/herofinal2.jpg";
 
   return (
     <section
