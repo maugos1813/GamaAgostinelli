@@ -37,7 +37,7 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
           <img
-            src="/logov2.jpeg"
+            src="/logov3.png"
             alt="GamaAgostinelli"
             className="w-8 h-8 rounded-lg object-cover shrink-0"
           />

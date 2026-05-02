@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-4">
             <a href="#inicio" className="flex items-center gap-2 w-fit">
               <img
-                src="/logov2.jpeg"
+                src="/logov3.png"
                 alt="Logo GamaAgostinelli"
                 className="w-8 h-8 rounded-lg object-cover shrink-0"
               />
