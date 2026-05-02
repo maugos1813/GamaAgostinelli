@@ -13,9 +13,9 @@ function applyDark(dark: boolean) {
 
 export function useDarkMode() {
   const [isDark, setIsDark] = useState<boolean>(() => {
-    // Always start in light mode
-    applyDark(false);
-    return false;
+    // Always start in dark mode
+    applyDark(true);
+    return true;
   });
 
   const toggle = () => {
