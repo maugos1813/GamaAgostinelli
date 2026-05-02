@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -16,6 +17,7 @@ const links = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { isDark, toggle: toggleDark } = useDarkMode();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -59,6 +61,16 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center gap-3">
           <ThemeToggle />
+          <button
+            onClick={toggleDark}
+            aria-label={isDark ? "Activar modo claro" : "Activar modo oscuro"}
+            className="w-9 h-9 rounded-full border border-border bg-secondary/60 grid place-items-center hover:bg-secondary hover:border-primary/40 transition-all duration-300"
+          >
+            {isDark
+              ? <Sun className="w-4 h-4 text-amber-400" />
+              : <Moon className="w-4 h-4 text-primary" />
+            }
+          </button>
           <Button variant="hero" size="default" asChild>
             <a href="#contacto">Contacto →</a>
           </Button>
@@ -66,6 +78,16 @@ const Navbar = () => {
 
         <div className="lg:hidden flex items-center gap-2">
           <ThemeToggle />
+          <button
+            onClick={toggleDark}
+            aria-label={isDark ? "Activar modo claro" : "Activar modo oscuro"}
+            className="w-9 h-9 rounded-full border border-border bg-secondary/60 grid place-items-center hover:bg-secondary transition-all duration-300"
+          >
+            {isDark
+              ? <Sun className="w-4 h-4 text-amber-400" />
+              : <Moon className="w-4 h-4 text-primary" />
+            }
+          </button>
           <button
             onClick={() => setOpen(!open)}
             className="text-foreground p-2"
