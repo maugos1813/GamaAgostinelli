@@ -2,14 +2,15 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import vet1 from "/vet1.png";
+import sonria from "/sonria.png";
 
 // Reemplazá cada `image` con el path real del screenshot y `demo` con la URL de la landing
 const projects = [
   {
     title: "Clínica Dental Sonría",
     tag: "Clínica Dental",
-    image: null,
-    demo: "#",
+    image: sonria,
+    demo: "https://clinicasonria.lovable.app/",
     metrics: ["+440% leads", "de 1.2% → 4.8% conv."],
   },
   {
