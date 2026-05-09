@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import vet1 from "/vet1.png";
 import sonria from "/sonria.png";
+import norte from "/norte.png";
 
 // Reemplazá cada `image` con el path real del screenshot y `demo` con la URL de la landing
 const projects = [
@@ -23,8 +24,8 @@ const projects = [
   {
     title: "Centro Odontológico Norte",
     tag: "Clínica Dental",
-    image: null,
-    demo: "#",
+    image: norte,
+    demo: "https://frame-fashioner-tool.lovable.app/",
     metrics: ["4.2x ROI en 60d", "3x más llamadas"],
   },
 ];
