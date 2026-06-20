@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0">
         <img
-          src="/herofinal(2).png"
+          src="/herofinal.png"
           alt=""
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
