@@ -50,7 +50,7 @@ const Stars = ({ count }: { count: number }) => (
 
 const Testimonials = () => {
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden bg-secondary/20">
+    <section id="testimonios" className="py-24 lg:py-32 relative overflow-hidden bg-secondary/20">
       <div className="absolute -top-40 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container relative">

@@ -7,10 +7,9 @@ import { useDarkMode } from "@/hooks/useDarkMode";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Sectores", href: "#sectores" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Precios", href: "#precios" },
+  { label: "Comparativa", href: "#comparativa" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Testimonios", href: "#testimonios" },
   { label: "Nosotros", href: "#nosotros" },
 ];
 

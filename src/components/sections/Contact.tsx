@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,33 +6,30 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
-const encode = (data: Record<string, string>) =>
-  Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "";
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "";
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "";
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!formRef.current) return;
     setLoading(true);
 
-    const form = e.target as HTMLFormElement;
-    const data: Record<string, string> = { "form-name": "contact" };
-    new FormData(form).forEach((value, key) => {
-      data[key] = value as string;
-    });
-
     try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode(data),
-      });
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      );
       toast.success("¡Mensaje enviado! Te respondemos en menos de 24 h.");
-      form.reset();
+      formRef.current.reset();
     } catch {
       toast.error("Hubo un error al enviar. Escribinos directamente por WhatsApp.");
     } finally {
@@ -90,21 +87,14 @@ const Contact = () => {
 
           {/* Form */}
           <motion.form
-            name="contact"
+            ref={formRef}
             onSubmit={onSubmit}
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-7 p-5 sm:p-7 lg:p-10 rounded-2xl lg:rounded-3xl bg-gradient-card border border-border space-y-4"
           >
-            {/* Required hidden fields for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
-            <div hidden>
-              <input name="bot-field" />
-            </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">

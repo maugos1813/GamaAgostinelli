@@ -2,18 +2,11 @@ import { Mail, MessageCircle, Instagram } from "lucide-react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Sectores", href: "#sectores" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Precios", href: "#precios" },
+  { label: "Comparativa", href: "#comparativa" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Testimonios", href: "#testimonios" },
   { label: "Sobre nosotros", href: "#nosotros" },
-];
-
-const serviceLinks = [
-  { label: "Diseño estratégico UI/UX", href: "#servicios" },
-  { label: "Desarrollo a medida", href: "#servicios" },
-  { label: "Lanzamiento + analítica", href: "#servicios" },
-  { label: "Soporte y mantenimiento", href: "#servicios" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 const legalLinks = [
@@ -33,7 +26,7 @@ const Footer = () => {
           - iPad mini (640px+): brand full-width top row, 3-col links below
           - desktop (1024px+) : 4 cols side by side
         */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 lg:gap-10 mb-10 lg:mb-14">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-8 lg:gap-10 mb-10 lg:mb-14">
 
           {/* ── Brand + contact ─────────────────────────────────────── */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-4">
@@ -58,11 +51,11 @@ const Footer = () => {
                 Contacto rápido
               </p>
               <a
-                href="mailto:maufabagosgam@gmail.com"
+                href="mailto:info@gamaagostinelli.cl"
                 className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors min-w-0"
               >
                 <Mail className="w-3.5 h-3.5 text-primary shrink-0" />
-                <span className="truncate">maufabagosgam@gmail.com</span>
+                <span className="truncate">info@gamaagostinelli.cl</span>
               </a>
               <a
                 href="https://wa.me/56933685702"
@@ -96,25 +89,6 @@ const Footer = () => {
                   <a
                     href={l.href}
                     className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {l.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* ── Servicios ───────────────────────────────────────────── */}
-          <div className="col-span-1">
-            <p className="text-[10px] font-mono uppercase tracking-widest text-primary mb-3">
-              Servicios
-            </p>
-            <ul className="space-y-2">
-              {serviceLinks.map((l) => (
-                <li key={l.label}>
-                  <a
-                    href={l.href}
-                    className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors leading-snug block"
                   >
                     {l.label}
                   </a>
