@@ -8,9 +8,9 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "";
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "";
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "";
+const EMAILJS_SERVICE_ID = "service_cpmz0o9";
+const EMAILJS_TEMPLATE_ID = "template_z3u8pyh";
+const EMAILJS_PUBLIC_KEY = "xE70F8iETbpdRBrnH";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
