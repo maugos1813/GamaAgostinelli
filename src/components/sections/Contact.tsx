@@ -63,11 +63,11 @@ const Contact = () => {
 
             <div className="mt-8 space-y-4">
               <a
-                href="mailto:maufabagosgam@gmail.com"
+                href="mailto:info@gamaagostinelli.cl"
                 className="flex items-center gap-3 text-sm lg:text-base text-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4 lg:w-5 lg:h-5 shrink-0" />
-                maufabagosgam@gmail.com
+                info@gamaagostinelli.cl
               </a>
               <a
                 href="https://wa.me/56933685702"
